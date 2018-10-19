@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 
-{% block title %}Edit {{ customer.firstName }} {{ customer.lastName }}{% endblock %}
+{% block title %}Edit {{ customer.fullName }}{% endblock %}
 
 {% block content %}
 
@@ -23,7 +23,7 @@
     <label for="notes"></label>Notes:
     <textarea class="form-control" name="notes">{{ customer.notes }}</textarea>
   </div>
-  <button class="btn btn-primary">Add</button>
+  <button class="btn btn-primary">Edit</button>
   <a href="/{{ customer.id }}/" class="btn btn-danger">Cancel</a>
 </form>
   
